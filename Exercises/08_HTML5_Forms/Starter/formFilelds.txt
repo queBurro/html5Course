@@ -1,0 +1,40 @@
+﻿<fieldset>
+		<legend>Card details</legend>
+		<ol>		
+			<li>
+				<fieldset>
+					<legend>Card type</legend>
+					<ol>
+						<li>
+							<input id=visa name=cardtype type=radio>
+							<label for=visa>VISA</label>
+						</li>
+						<li>
+							<input id=amex name=cardtype type=radio>
+							<label for=amex>AmEx</label>
+						</li>
+						<li>
+							<input id=mastercard name=cardtype type=radio>
+							<label for=mastercard>Mastercard</label>
+						</li>
+					</ol>
+				</fieldset>
+			</li>
+			<li>
+				<label for=cardnumber>Card number</label>
+				<input id=cardnumber name=cardnumber type=number required>
+			</li>
+			<li>
+                <label for="card_expiry">Card Expiry</label>
+                <input type="month" name="card_expiry" maxlength="7" placeholder="YYYY-MM" value="2018-06" required >  
+            </li>
+			<li>
+				<label for=secure>Security code</label>
+				<input id=secure name=secure type=number required>
+			</li>
+			<li>
+				<label for=namecard>Name on card</label>
+				<input id=namecard name=namecard type=text placeholder="Exact name as on the card" required>
+			</li>
+		</ol>
+	</fieldset>

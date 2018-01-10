@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>05_JavaScript_for_Developer_object</title>
+</head>
+<body>
+    <script>
+        var objStudent = { name: "Harry Potter", address: "4 Privet Drive", email: "hp@hogwarts.ac.uk" };
+
+        console.log(objStudent["name"]);
+
+        objStudent.schoolHouse = "Gryffindor"; //expand property
+
+        console.log(objStudent);
+
+        for (var key in objStudent) {
+            console.log(key + " : " + objStudent[key]);
+        }
+
+    </script>
+</body>
+</html>

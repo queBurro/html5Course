@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>05_JavaScript_for_Developer_Array</title>
+</head>
+
+<body>
+    <script>
+        function displayArray(array) {
+            var output = "";
+            for (var i = 0; i < array.length; i++) {
+
+                if (i < array.length - 1) {
+                    output += array[i] + " ";
+                } else {
+                    output += array[i];
+                }
+            }
+            output += "!";
+            return output;
+        }
+
+        var sentence = ["Luke", "I", "am", "your", "father"];
+        console.log(sentence.toString());
+        var pp = displayArray(sentence);
+        console.log(pp);
+    </script>
+</body>
+
+</html>

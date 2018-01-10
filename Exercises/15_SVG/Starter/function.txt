@@ -1,0 +1,31 @@
+﻿ /*
+     * Get a Point X value.
+     * degress. Angle's degrees.
+     * r. Circle's radio.
+     * adjust. Percent of length.
+     * x. Start of X point.
+     */
+    function getX(degrees, r, adjust, x) {
+        var x = x || r,
+        adj = adjust || 1;
+        return x + r * adj * Math.cos(getRad(degrees));
+    }
+
+    /*
+     * Get a Point Y value.
+     * degress. Angle's degrees.
+     * r. Circle's radio.
+     * adjust. Percent of length.
+     * x. Start of Y point.
+     */
+    function getY(degrees, r, adjust, y) {
+        var y = y || r,
+        adj = adjust || 1;
+        return y + r * adj * Math.sin(getRad(degrees));
+    }
+
+    // Convert from degrees to radians.
+    function getRad(degrees) {
+        var adjust = Math.PI / 2;
+        return (degrees * Math.PI / 180) - adjust;
+    }
